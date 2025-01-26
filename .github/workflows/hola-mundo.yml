@@ -2,9 +2,6 @@ name: Aprendiendo github actions
 
 on: [push]
 
-permissions:
-  contents: read
-
 jobs:
   hola-mundo:
 
