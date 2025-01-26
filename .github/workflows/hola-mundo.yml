@@ -2,9 +2,9 @@ name: PHP Composer
 
 on:
   push:
-    branches: [ "apreindiendo-github-actions" ]
+    branches: [ "aprendiendo-github-actions" ]
   pull_request:
-    branches: [ "apreindiendo-github-actions" ]
+    branches: [ "aprendiendo-github-actions" ]
 
 permissions:
   contents: read
