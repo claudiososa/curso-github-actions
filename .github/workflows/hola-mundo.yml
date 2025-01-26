@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Aprendiendo github actions
 
 on: [push]
 
@@ -6,7 +6,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  hola-mundo:
 
     runs-on: ubuntu-latest
 
