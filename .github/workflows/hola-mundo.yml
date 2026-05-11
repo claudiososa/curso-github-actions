@@ -1,6 +1,9 @@
 name: Aprendiendo github actions
 
-on: [push]
+on:
+  push:
+    branches:
+      - aprendiendo-github-actions
 
 jobs:
   hola-mundo:
@@ -10,13 +13,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
+    - name: Setup GO
+      uses: actions/setup-go@v5
       with:
-        php-version: '8.2' # Cambia a la versión de PHP que necesites
+        go-version: '1.22'
 
     - name: Exec file
-      run: php index.php
+      run: go run main.go
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
